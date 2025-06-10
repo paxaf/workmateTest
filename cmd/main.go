@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/paxaf/BrandScoutTest/internal/app"
+	"github.com/paxaf/workmateTest/internal/app"
 )
 
 func main() {
