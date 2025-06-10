@@ -61,7 +61,7 @@ func (app *App) Run() error {
 	go func() {
 		log.Println("API server started successfully. " + "Address: " + app.apiServer.Addr)
 		if err := app.apiServer.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
-			log.Printf("failed to start server")
+			log.Printf("failed to start server: %v", err)
 		}
 	}()
 
