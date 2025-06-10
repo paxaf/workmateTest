@@ -1,9 +1,9 @@
 package entity
 
 const (
-	statusNew  = "new"
-	statusErr  = "err"
-	statusDone = "done"
+	StatusNew        = "new"
+	StatusInProgress = "in progress"
+	StatusDone       = "done"
 )
 
 type Task struct {

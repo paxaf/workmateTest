@@ -12,6 +12,7 @@ type Usecase interface {
 	GetAll() []entity.Task
 	Set(value entity.Task)
 	Get(key string) (entity.Task, bool)
+	Update(key string, value entity.Task)
 }
 
 type usecase struct {

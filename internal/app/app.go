@@ -15,6 +15,7 @@ import (
 	"github.com/paxaf/BrandScoutTest/internal/controller/middleware"
 	storage "github.com/paxaf/BrandScoutTest/internal/repo/engine"
 	"github.com/paxaf/BrandScoutTest/internal/usecase"
+	"github.com/paxaf/BrandScoutTest/internal/worker"
 )
 
 const (
@@ -25,6 +26,7 @@ const (
 
 type App struct {
 	apiServer *http.Server
+	scheduler *worker.Scheduler
 }
 
 func New() (*App, error) {
@@ -46,6 +48,9 @@ func New() (*App, error) {
 		Handler:           http.DefaultServeMux,
 		ReadHeaderTimeout: defaultTimeout,
 	}
+
+	scheduler := worker.NewScheduler(service)
+	app.scheduler = scheduler
 	return app, nil
 }
 
@@ -60,6 +65,7 @@ func (app *App) Run() error {
 		}
 	}()
 
+	app.scheduler.Start()
 	<-ctx.Done()
 	log.Printf("Received shutdown signal")
 
@@ -67,6 +73,7 @@ func (app *App) Run() error {
 }
 
 func (app *App) Close() error {
+	app.scheduler.Stop()
 	err := app.apiServer.Shutdown(context.Background())
 	if err != nil {
 		return err

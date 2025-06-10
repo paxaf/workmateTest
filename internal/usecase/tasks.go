@@ -33,3 +33,8 @@ func (uc *usecase) Set(value entity.Task) {
 	uc.repo.Set(keyStr, value)
 	log.Println("successeful set value")
 }
+
+func (uc *usecase) Update(key string, value entity.Task) {
+	uc.repo.Set(key, value)
+	return
+}

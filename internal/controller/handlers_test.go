@@ -21,6 +21,11 @@ type MockUsecase struct {
 	returnErr  bool
 }
 
+func (m *MockUsecase) Update(key string, value entity.Task) {
+	m.Set(value)
+	return
+}
+
 func (m *MockUsecase) Get(key string) (entity.Task, bool) {
 	if m.returnErr {
 		return entity.Task{}, false
