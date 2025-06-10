@@ -1,4 +1,4 @@
-# BrandScoutTest - Управление цитатами
+# workmateTest - Управление цитатами
 
 [![Go Version](https://img.shields.io/badge/go-1.23%2B-blue.svg)](https://golang.org/)
 
