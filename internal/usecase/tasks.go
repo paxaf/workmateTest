@@ -5,7 +5,7 @@ import (
 	"log"
 	"strconv"
 
-	"github.com/paxaf/BrandScoutTest/internal/entity"
+	"github.com/paxaf/workmateTest/internal/entity"
 )
 
 func (uc *usecase) Delete(key string) error {

@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/paxaf/BrandScoutTest/internal/usecase"
+	"github.com/paxaf/workmateTest/internal/usecase"
 )
 
 type UsecaseHandler struct {

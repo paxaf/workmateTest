@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/paxaf/BrandScoutTest/internal/entity"
+	"github.com/paxaf/workmateTest/internal/entity"
 )
 
 func (h *UsecaseHandler) Add(w http.ResponseWriter, r *http.Request) {

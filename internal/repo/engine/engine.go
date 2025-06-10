@@ -3,7 +3,7 @@ package storage
 import (
 	"log"
 
-	"github.com/paxaf/BrandScoutTest/internal/entity"
+	"github.com/paxaf/workmateTest/internal/entity"
 )
 
 type Engine struct {
@@ -40,12 +40,4 @@ func (e *Engine) GetAll() []entity.Task {
 		res = append(res, val)
 	}
 	return res
-}
-
-func (e *Engine) GetById(key string) *entity.Task {
-	val, ok := e.partition.Get(key)
-	if !ok {
-		return nil
-	}
-	return &val
 }

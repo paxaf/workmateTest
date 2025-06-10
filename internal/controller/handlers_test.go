@@ -11,8 +11,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/paxaf/BrandScoutTest/internal/controller"
-	"github.com/paxaf/BrandScoutTest/internal/entity"
+	"github.com/paxaf/workmateTest/internal/controller"
+	"github.com/paxaf/workmateTest/internal/entity"
 )
 
 type MockUsecase struct {

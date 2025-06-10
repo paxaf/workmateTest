@@ -3,8 +3,8 @@ package usecase
 import (
 	"sync/atomic"
 
-	"github.com/paxaf/BrandScoutTest/internal/entity"
-	"github.com/paxaf/BrandScoutTest/internal/repo"
+	"github.com/paxaf/workmateTest/internal/entity"
+	"github.com/paxaf/workmateTest/internal/repo"
 )
 
 type Usecase interface {

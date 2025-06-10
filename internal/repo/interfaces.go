@@ -1,6 +1,6 @@
 package repo
 
-import "github.com/paxaf/BrandScoutTest/internal/entity"
+import "github.com/paxaf/workmateTest/internal/entity"
 
 type Repository interface {
 	Set(key string, value entity.Task)

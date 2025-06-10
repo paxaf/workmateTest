@@ -11,11 +11,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/paxaf/BrandScoutTest/internal/controller"
-	"github.com/paxaf/BrandScoutTest/internal/controller/middleware"
-	storage "github.com/paxaf/BrandScoutTest/internal/repo/engine"
-	"github.com/paxaf/BrandScoutTest/internal/usecase"
-	"github.com/paxaf/BrandScoutTest/internal/worker"
+	"github.com/paxaf/workmateTest/internal/controller"
+	"github.com/paxaf/workmateTest/internal/controller/middleware"
+	storage "github.com/paxaf/workmateTest/internal/repo/engine"
+	"github.com/paxaf/workmateTest/internal/usecase"
+	"github.com/paxaf/workmateTest/internal/worker"
 )
 
 const (

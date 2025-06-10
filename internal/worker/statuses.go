@@ -5,8 +5,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/paxaf/BrandScoutTest/internal/entity"
-	"github.com/paxaf/BrandScoutTest/internal/usecase"
+	"github.com/paxaf/workmateTest/internal/entity"
+	"github.com/paxaf/workmateTest/internal/usecase"
 )
 
 const (

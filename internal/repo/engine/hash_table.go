@@ -3,7 +3,7 @@ package storage
 import (
 	"sync"
 
-	"github.com/paxaf/BrandScoutTest/internal/entity"
+	"github.com/paxaf/workmateTest/internal/entity"
 )
 
 type HashTable struct {
